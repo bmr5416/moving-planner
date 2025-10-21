@@ -1,0 +1,20 @@
+{
+  "box_sizes": {
+    "small": 1.5,
+    "medium": 5.5,
+    "large": 8.5,
+    "wardrobe": 2.8
+  },
+  "buffer_percentage": 0.08,
+  "packing_efficiency": {
+    "small": 0.98,
+    "medium": 0.98,
+    "large": 0.98,
+    "wardrobe": 0.99
+  },
+  "assignment_rules": {
+    "physical_tasks": "Andie",
+    "organizational_tasks": "Brad",
+    "no_lifting_assignee": "Brad"
+  }
+}

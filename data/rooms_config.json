@@ -1,0 +1,422 @@
+{
+  "Kitchen": {
+    "floor": 1,
+    "priority": 2,
+    "description": "Main kitchen area",
+    "categories": [
+      {
+        "name": "Dishes & Cookware",
+        "box_type": "large",
+        "typical_volume": 30,
+        "heavy": false,
+        "fragile": true
+      },
+      {
+        "name": "Pantry Items",
+        "box_type": "large",
+        "typical_volume": 20,
+        "heavy": false,
+        "fragile": false
+      },
+      {
+        "name": "Small Appliances",
+        "box_type": "large",
+        "typical_volume": 15,
+        "heavy": false,
+        "fragile": true
+      },
+      {
+        "name": "Utensils & Drawers",
+        "box_type": "large",
+        "typical_volume": 10,
+        "heavy": false,
+        "fragile": false
+      }
+    ]
+  },
+  "Office": {
+    "floor": 2,
+    "priority": 2,
+    "description": "Home office workspace",
+    "categories": [
+      {
+        "name": "Books",
+        "box_type": "small",
+        "typical_volume": 25,
+        "heavy": true,
+        "fragile": false
+      },
+      {
+        "name": "Files & Papers",
+        "box_type": "large",
+        "typical_volume": 15,
+        "heavy": false,
+        "fragile": false
+      },
+      {
+        "name": "Electronics",
+        "box_type": "large",
+        "typical_volume": 20,
+        "heavy": false,
+        "fragile": true
+      },
+      {
+        "name": "Office Supplies",
+        "box_type": "large",
+        "typical_volume": 10,
+        "heavy": false,
+        "fragile": false
+      }
+    ]
+  },
+  "Bedroom": {
+    "floor": 2,
+    "priority": 3,
+    "description": "Main bedroom",
+    "categories": [
+      {
+        "name": "Clothes (Hanging)",
+        "box_type": "wardrobe",
+        "typical_volume": 30,
+        "heavy": false,
+        "fragile": false
+      },
+      {
+        "name": "Clothes (Folded)",
+        "box_type": "large",
+        "typical_volume": 25,
+        "heavy": false,
+        "fragile": false
+      },
+      {
+        "name": "Shoes & Accessories",
+        "box_type": "large",
+        "typical_volume": 15,
+        "heavy": false,
+        "fragile": false
+      },
+      {
+        "name": "Linens & Bedding",
+        "box_type": "large",
+        "typical_volume": 20,
+        "heavy": false,
+        "fragile": false
+      },
+      {
+        "name": "Personal Items",
+        "box_type": "large",
+        "typical_volume": 10,
+        "heavy": false,
+        "fragile": true
+      }
+    ]
+  },
+  "Top Bathroom": {
+    "floor": 3,
+    "priority": 1,
+    "description": "Upstairs bathroom",
+    "categories": [
+      {
+        "name": "Toiletries",
+        "box_type": "large",
+        "typical_volume": 8,
+        "heavy": false,
+        "fragile": true
+      },
+      {
+        "name": "Towels & Linens",
+        "box_type": "large",
+        "typical_volume": 12,
+        "heavy": false,
+        "fragile": false
+      },
+      {
+        "name": "Medicines & First Aid",
+        "box_type": "large",
+        "typical_volume": 5,
+        "heavy": false,
+        "fragile": true
+      },
+      {
+        "name": "Cleaning Supplies",
+        "box_type": "large",
+        "typical_volume": 6,
+        "heavy": false,
+        "fragile": false
+      }
+    ]
+  },
+  "Lounge": {
+    "floor": 2,
+    "priority": 3,
+    "description": "Lounge area",
+    "categories": [
+      {
+        "name": "Decor & Art",
+        "box_type": "large",
+        "typical_volume": 15,
+        "heavy": false,
+        "fragile": true
+      },
+      {
+        "name": "Media (Books/DVDs)",
+        "box_type": "small",
+        "typical_volume": 12,
+        "heavy": true,
+        "fragile": false
+      },
+      {
+        "name": "Cushions & Textiles",
+        "box_type": "large",
+        "typical_volume": 10,
+        "heavy": false,
+        "fragile": false
+      },
+      {
+        "name": "Miscellaneous",
+        "box_type": "large",
+        "typical_volume": 8,
+        "heavy": false,
+        "fragile": false
+      }
+    ]
+  },
+  "Living Room": {
+    "floor": 1,
+    "priority": 3,
+    "description": "Main living area",
+    "categories": [
+      {
+        "name": "Decor & Art",
+        "box_type": "large",
+        "typical_volume": 18,
+        "heavy": false,
+        "fragile": true
+      },
+      {
+        "name": "Media & Books",
+        "box_type": "small",
+        "typical_volume": 15,
+        "heavy": true,
+        "fragile": false
+      },
+      {
+        "name": "Electronics & Cables",
+        "box_type": "large",
+        "typical_volume": 12,
+        "heavy": false,
+        "fragile": true
+      },
+      {
+        "name": "Cushions & Throws",
+        "box_type": "large",
+        "typical_volume": 10,
+        "heavy": false,
+        "fragile": false
+      }
+    ]
+  },
+  "Dog Room": {
+    "floor": 1,
+    "priority": 4,
+    "description": "Dedicated pet space",
+    "categories": [
+      {
+        "name": "Pet Supplies",
+        "box_type": "large",
+        "typical_volume": 15,
+        "heavy": false,
+        "fragile": false
+      },
+      {
+        "name": "Toys & Accessories",
+        "box_type": "large",
+        "typical_volume": 8,
+        "heavy": false,
+        "fragile": false
+      },
+      {
+        "name": "Food & Treats",
+        "box_type": "small",
+        "typical_volume": 10,
+        "heavy": true,
+        "fragile": false
+      },
+      {
+        "name": "Bedding & Crates",
+        "box_type": "large",
+        "typical_volume": 12,
+        "heavy": false,
+        "fragile": false
+      }
+    ]
+  },
+  "Dining Room": {
+    "floor": 1,
+    "priority": 2,
+    "description": "Formal dining area",
+    "categories": [
+      {
+        "name": "Dining Ware",
+        "box_type": "large",
+        "typical_volume": 20,
+        "heavy": false,
+        "fragile": true
+      },
+      {
+        "name": "Table Linens",
+        "box_type": "large",
+        "typical_volume": 8,
+        "heavy": false,
+        "fragile": false
+      },
+      {
+        "name": "Decor & Centerpieces",
+        "box_type": "large",
+        "typical_volume": 10,
+        "heavy": false,
+        "fragile": true
+      },
+      {
+        "name": "Serving Items",
+        "box_type": "large",
+        "typical_volume": 12,
+        "heavy": false,
+        "fragile": true
+      }
+    ]
+  },
+  "Garage": {
+    "floor": 0,
+    "priority": 1,
+    "description": "Garage storage",
+    "categories": [
+      {
+        "name": "Tools & Hardware",
+        "box_type": "small",
+        "typical_volume": 20,
+        "heavy": true,
+        "fragile": false
+      },
+      {
+        "name": "Sports Equipment",
+        "box_type": "large",
+        "typical_volume": 25,
+        "heavy": false,
+        "fragile": false
+      },
+      {
+        "name": "Storage Boxes",
+        "box_type": "small",
+        "typical_volume": 30,
+        "heavy": true,
+        "fragile": false
+      },
+      {
+        "name": "Outdoor Gear",
+        "box_type": "large",
+        "typical_volume": 18,
+        "heavy": false,
+        "fragile": false
+      }
+    ]
+  },
+  "Grow Room": {
+    "floor": 1,
+    "priority": 0,
+    "description": "\u2b50 STAGING AREA - Pack boxes from other rooms here",
+    "staging_only": true,
+    "categories": []
+  },
+  "In-Law": {
+    "floor": 0,
+    "priority": 2,
+    "description": "In-law suite living area",
+    "categories": [
+      {
+        "name": "Mixed Storage",
+        "box_type": "large",
+        "typical_volume": 20,
+        "heavy": false,
+        "fragile": false
+      },
+      {
+        "name": "Furniture Items",
+        "box_type": "small",
+        "typical_volume": 15,
+        "heavy": true,
+        "fragile": false
+      },
+      {
+        "name": "Miscellaneous",
+        "box_type": "large",
+        "typical_volume": 12,
+        "heavy": false,
+        "fragile": false
+      }
+    ]
+  },
+  "In-Law Bedroom": {
+    "floor": 0,
+    "priority": 2,
+    "description": "In-law suite bedroom",
+    "categories": [
+      {
+        "name": "Clothes & Accessories",
+        "box_type": "large",
+        "typical_volume": 20,
+        "heavy": false,
+        "fragile": false
+      },
+      {
+        "name": "Linens & Bedding",
+        "box_type": "large",
+        "typical_volume": 15,
+        "heavy": false,
+        "fragile": false
+      },
+      {
+        "name": "Personal Items",
+        "box_type": "large",
+        "typical_volume": 10,
+        "heavy": false,
+        "fragile": true
+      }
+    ]
+  },
+  "Patio": {
+    "floor": 0,
+    "priority": 1,
+    "description": "Outdoor patio area",
+    "categories": [
+      {
+        "name": "Outdoor Furniture",
+        "box_type": "small",
+        "typical_volume": 25,
+        "heavy": true,
+        "fragile": false
+      },
+      {
+        "name": "Plants & Planters",
+        "box_type": "large",
+        "typical_volume": 15,
+        "heavy": false,
+        "fragile": true
+      },
+      {
+        "name": "Grilling Equipment",
+        "box_type": "large",
+        "typical_volume": 12,
+        "heavy": false,
+        "fragile": false
+      },
+      {
+        "name": "Outdoor Decor",
+        "box_type": "large",
+        "typical_volume": 10,
+        "heavy": false,
+        "fragile": true
+      }
+    ]
+  }
+}

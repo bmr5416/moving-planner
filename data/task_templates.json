@@ -1,0 +1,26 @@
+{
+  "collection": {
+    "template": "Gather all {category} in {room}",
+    "type": "collection",
+    "icon": "\ud83d\udd0d",
+    "default_assignee": "either"
+  },
+  "packing": {
+    "template": "Pack {box_count} {box_type} boxes: {room} - {category}",
+    "type": "packing",
+    "icon": "\ud83d\udce6",
+    "default_assignee": "Andie"
+  },
+  "staging": {
+    "template": "Move {box_count} packed boxes to Grow Room staging area",
+    "type": "staging",
+    "icon": "\ud83d\ude9a",
+    "default_assignee": "Andie"
+  },
+  "verification": {
+    "template": "Final sweep: {room} - verify {category} section empty",
+    "type": "verification",
+    "icon": "\u2705",
+    "default_assignee": "Brad"
+  }
+}
