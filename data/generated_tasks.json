@@ -11,6 +11,7 @@
       "completed": false,
       "day": "2025-10-22",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -24,6 +25,7 @@
       "completed": false,
       "day": "2025-10-22",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -37,6 +39,7 @@
       "completed": false,
       "day": "2025-10-22",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -50,6 +53,7 @@
       "completed": false,
       "day": "2025-10-22",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -67,6 +71,7 @@
       "order": 2,
       "heavy": true,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -84,6 +89,7 @@
       "order": 2,
       "heavy": false,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -101,6 +107,7 @@
       "order": 2,
       "heavy": true,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -118,6 +125,7 @@
       "order": 2,
       "heavy": false,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -127,7 +135,8 @@
       "room": "Garage",
       "category": "Tools & Hardware",
       "box_count": 6,
-      "description": "Move 6 packed boxes to Grow Room staging area (Garage - Tools & Hardware)",
+      "staging_area": "Grow Room",
+      "description": "Move 6 small boxes to Grow Room staging area (Floor 0) - Garage: Tools & Hardware",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-22",
@@ -141,7 +150,8 @@
       "room": "Garage",
       "category": "Sports Equipment",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Garage - Sports Equipment)",
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 0) - Garage: Sports Equipment",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-22",
@@ -155,7 +165,8 @@
       "room": "Garage",
       "category": "Storage Boxes",
       "box_count": 7,
-      "description": "Move 7 packed boxes to Grow Room staging area (Garage - Storage Boxes)",
+      "staging_area": "Grow Room",
+      "description": "Move 7 small boxes to Grow Room staging area (Floor 0) - Garage: Storage Boxes",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-22",
@@ -169,7 +180,8 @@
       "room": "Garage",
       "category": "Outdoor Gear",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Garage - Outdoor Gear)",
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 0) - Garage: Outdoor Gear",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-22",
@@ -187,6 +199,7 @@
       "completed": false,
       "day": "2025-10-22",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -200,6 +213,7 @@
       "completed": false,
       "day": "2025-10-22",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -213,6 +227,7 @@
       "completed": false,
       "day": "2025-10-22",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -226,136 +241,146 @@
       "completed": false,
       "day": "2025-10-22",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
-      "id": "Office_Books_collection",
+      "id": "Lounge_Decor & Art_collection",
       "type": "collection",
       "icon": "\ud83d\udd0d",
-      "room": "Office",
-      "category": "Books",
-      "description": "Gather all books in Office",
+      "room": "Lounge",
+      "category": "Decor & Art",
+      "description": "Gather all decor & art in Lounge",
+      "assignee": "Brad",
+      "completed": false,
+      "day": "2025-10-22",
+      "order": 1,
+      "is_laundry": false,
+      "day_label": "Tuesday, October 22"
+    },
+    {
+      "id": "Lounge_Media (Books/DVDs)_collection",
+      "type": "collection",
+      "icon": "\ud83d\udd0d",
+      "room": "Lounge",
+      "category": "Media (Books/DVDs)",
+      "description": "Gather all media (books/dvds) in Lounge",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-22",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
-      "id": "Office_Files & Papers_collection",
+      "id": "Lounge_Cushions & Textiles_collection",
       "type": "collection",
       "icon": "\ud83d\udd0d",
-      "room": "Office",
-      "category": "Files & Papers",
-      "description": "Gather all files & papers in Office",
+      "room": "Lounge",
+      "category": "Cushions & Textiles",
+      "description": "Gather all cushions & textiles in Lounge",
       "assignee": "Brad",
       "completed": false,
       "day": "2025-10-22",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
-      "id": "Office_Electronics_collection",
+      "id": "Lounge_Miscellaneous_collection",
       "type": "collection",
       "icon": "\ud83d\udd0d",
-      "room": "Office",
-      "category": "Electronics",
-      "description": "Gather all electronics in Office",
+      "room": "Lounge",
+      "category": "Miscellaneous",
+      "description": "Gather all miscellaneous in Lounge",
       "assignee": "Brad",
       "completed": false,
       "day": "2025-10-22",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
-      "id": "Office_Office Supplies_collection",
-      "type": "collection",
-      "icon": "\ud83d\udd0d",
-      "room": "Office",
-      "category": "Office Supplies",
-      "description": "Gather all office supplies in Office",
-      "assignee": "Brad",
-      "completed": false,
-      "day": "2025-10-22",
-      "order": 1,
-      "day_label": "Tuesday, October 22"
-    },
-    {
-      "id": "Office_Books_packing",
+      "id": "Lounge_Decor & Art_packing",
       "type": "packing",
       "icon": "\ud83d\udce6",
-      "room": "Office",
-      "category": "Books",
-      "box_count": 1,
-      "box_type": "small",
-      "description": "Pack 1 small boxes: Office - Books",
-      "assignee": "Andie",
-      "completed": false,
-      "day": "2025-10-22",
-      "order": 2,
-      "heavy": true,
-      "fragile": false,
-      "day_label": "Tuesday, October 22"
-    },
-    {
-      "id": "Office_Files & Papers_packing",
-      "type": "packing",
-      "icon": "\ud83d\udce6",
-      "room": "Office",
-      "category": "Files & Papers",
+      "room": "Lounge",
+      "category": "Decor & Art",
       "box_count": 1,
       "box_type": "large",
-      "description": "Pack 1 large boxes: Office - Files & Papers",
-      "assignee": "Andie",
-      "completed": false,
-      "day": "2025-10-22",
-      "order": 2,
-      "heavy": false,
-      "fragile": false,
-      "day_label": "Tuesday, October 22"
-    },
-    {
-      "id": "Office_Electronics_packing",
-      "type": "packing",
-      "icon": "\ud83d\udce6",
-      "room": "Office",
-      "category": "Electronics",
-      "box_count": 1,
-      "box_type": "large",
-      "description": "Pack 1 large boxes: Office - Electronics",
+      "description": "Pack 1 large boxes: Lounge - Decor & Art",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-22",
       "order": 2,
       "heavy": false,
       "fragile": true,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
-      "id": "Office_Office Supplies_packing",
+      "id": "Lounge_Media (Books/DVDs)_packing",
       "type": "packing",
       "icon": "\ud83d\udce6",
-      "room": "Office",
-      "category": "Office Supplies",
+      "room": "Lounge",
+      "category": "Media (Books/DVDs)",
+      "box_count": 2,
+      "box_type": "small",
+      "description": "Pack 2 small boxes: Lounge - Media (Books/DVDs)",
+      "assignee": "Andie",
+      "completed": false,
+      "day": "2025-10-22",
+      "order": 2,
+      "heavy": true,
+      "fragile": false,
+      "is_laundry": false,
+      "day_label": "Tuesday, October 22"
+    },
+    {
+      "id": "Lounge_Cushions & Textiles_packing",
+      "type": "packing",
+      "icon": "\ud83d\udce6",
+      "room": "Lounge",
+      "category": "Cushions & Textiles",
       "box_count": 1,
       "box_type": "large",
-      "description": "Pack 1 large boxes: Office - Office Supplies",
+      "description": "Pack 1 large boxes: Lounge - Cushions & Textiles",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-22",
       "order": 2,
       "heavy": false,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
-      "id": "Office_Books_staging",
+      "id": "Lounge_Miscellaneous_packing",
+      "type": "packing",
+      "icon": "\ud83d\udce6",
+      "room": "Lounge",
+      "category": "Miscellaneous",
+      "box_count": 1,
+      "box_type": "large",
+      "description": "Pack 1 large boxes: Lounge - Miscellaneous",
+      "assignee": "Andie",
+      "completed": false,
+      "day": "2025-10-22",
+      "order": 2,
+      "heavy": false,
+      "fragile": false,
+      "is_laundry": false,
+      "day_label": "Tuesday, October 22"
+    },
+    {
+      "id": "Lounge_Decor & Art_staging",
       "type": "staging",
       "icon": "\ud83d\ude9a",
-      "room": "Office",
-      "category": "Books",
+      "room": "Lounge",
+      "category": "Decor & Art",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Office - Books)",
+      "staging_area": "Lounge",
+      "description": "Move 1 large boxes to Lounge staging area (Floor 3) - Lounge: Decor & Art",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-22",
@@ -363,13 +388,14 @@
       "day_label": "Tuesday, October 22"
     },
     {
-      "id": "Office_Files & Papers_staging",
+      "id": "Lounge_Media (Books/DVDs)_staging",
       "type": "staging",
       "icon": "\ud83d\ude9a",
-      "room": "Office",
-      "category": "Files & Papers",
-      "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Office - Files & Papers)",
+      "room": "Lounge",
+      "category": "Media (Books/DVDs)",
+      "box_count": 2,
+      "staging_area": "Lounge",
+      "description": "Move 2 small boxes to Lounge staging area (Floor 3) - Lounge: Media (Books/DVDs)",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-22",
@@ -377,13 +403,14 @@
       "day_label": "Tuesday, October 22"
     },
     {
-      "id": "Office_Electronics_staging",
+      "id": "Lounge_Cushions & Textiles_staging",
       "type": "staging",
       "icon": "\ud83d\ude9a",
-      "room": "Office",
-      "category": "Electronics",
+      "room": "Lounge",
+      "category": "Cushions & Textiles",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Office - Electronics)",
+      "staging_area": "Lounge",
+      "description": "Move 1 large boxes to Lounge staging area (Floor 3) - Lounge: Cushions & Textiles",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-22",
@@ -391,13 +418,14 @@
       "day_label": "Tuesday, October 22"
     },
     {
-      "id": "Office_Office Supplies_staging",
+      "id": "Lounge_Miscellaneous_staging",
       "type": "staging",
       "icon": "\ud83d\ude9a",
-      "room": "Office",
-      "category": "Office Supplies",
+      "room": "Lounge",
+      "category": "Miscellaneous",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Office - Office Supplies)",
+      "staging_area": "Lounge",
+      "description": "Move 1 large boxes to Lounge staging area (Floor 3) - Lounge: Miscellaneous",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-22",
@@ -405,55 +433,59 @@
       "day_label": "Tuesday, October 22"
     },
     {
-      "id": "Office_Books_verification",
+      "id": "Lounge_Decor & Art_verification",
       "type": "verification",
       "icon": "\u2705",
-      "room": "Office",
-      "category": "Books",
-      "description": "Final sweep: Office - verify books section empty",
+      "room": "Lounge",
+      "category": "Decor & Art",
+      "description": "Final sweep: Lounge - verify decor & art section empty",
       "assignee": "Brad",
       "completed": false,
       "day": "2025-10-22",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
-      "id": "Office_Files & Papers_verification",
+      "id": "Lounge_Media (Books/DVDs)_verification",
       "type": "verification",
       "icon": "\u2705",
-      "room": "Office",
-      "category": "Files & Papers",
-      "description": "Final sweep: Office - verify files & papers section empty",
+      "room": "Lounge",
+      "category": "Media (Books/DVDs)",
+      "description": "Final sweep: Lounge - verify media (books/dvds) section empty",
       "assignee": "Brad",
       "completed": false,
       "day": "2025-10-22",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
-      "id": "Office_Electronics_verification",
+      "id": "Lounge_Cushions & Textiles_verification",
       "type": "verification",
       "icon": "\u2705",
-      "room": "Office",
-      "category": "Electronics",
-      "description": "Final sweep: Office - verify electronics section empty",
+      "room": "Lounge",
+      "category": "Cushions & Textiles",
+      "description": "Final sweep: Lounge - verify cushions & textiles section empty",
       "assignee": "Brad",
       "completed": false,
       "day": "2025-10-22",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
-      "id": "Office_Office Supplies_verification",
+      "id": "Lounge_Miscellaneous_verification",
       "type": "verification",
       "icon": "\u2705",
-      "room": "Office",
-      "category": "Office Supplies",
-      "description": "Final sweep: Office - verify office supplies section empty",
+      "room": "Lounge",
+      "category": "Miscellaneous",
+      "description": "Final sweep: Lounge - verify miscellaneous section empty",
       "assignee": "Brad",
       "completed": false,
       "day": "2025-10-22",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -467,6 +499,7 @@
       "completed": false,
       "day": "2025-10-22",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -484,6 +517,7 @@
       "order": 2,
       "heavy": false,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -493,7 +527,8 @@
       "room": "Patio",
       "category": "Grilling Equipment",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Patio - Grilling Equipment)",
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 0) - Patio: Grilling Equipment",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-22",
@@ -511,6 +546,7 @@
       "completed": false,
       "day": "2025-10-22",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -524,6 +560,7 @@
       "completed": false,
       "day": "2025-10-22",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -537,6 +574,7 @@
       "completed": false,
       "day": "2025-10-22",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -550,6 +588,7 @@
       "completed": false,
       "day": "2025-10-22",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -563,6 +602,7 @@
       "completed": false,
       "day": "2025-10-22",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -580,6 +620,7 @@
       "order": 2,
       "heavy": false,
       "fragile": true,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -597,6 +638,7 @@
       "order": 2,
       "heavy": false,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -614,6 +656,7 @@
       "order": 2,
       "heavy": false,
       "fragile": true,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -631,6 +674,7 @@
       "order": 2,
       "heavy": false,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -640,7 +684,8 @@
       "room": "Top Bathroom",
       "category": "Toiletries",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Top Bathroom - Toiletries)",
+      "staging_area": "Lounge",
+      "description": "Move 1 large boxes to Lounge staging area (Floor 3) - Top Bathroom: Toiletries",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-22",
@@ -654,7 +699,8 @@
       "room": "Top Bathroom",
       "category": "Towels & Linens",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Top Bathroom - Towels & Linens)",
+      "staging_area": "Lounge",
+      "description": "Move 1 large boxes to Lounge staging area (Floor 3) - Top Bathroom: Towels & Linens",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-22",
@@ -668,7 +714,8 @@
       "room": "Top Bathroom",
       "category": "Medicines & First Aid",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Top Bathroom - Medicines & First Aid)",
+      "staging_area": "Lounge",
+      "description": "Move 1 large boxes to Lounge staging area (Floor 3) - Top Bathroom: Medicines & First Aid",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-22",
@@ -682,7 +729,8 @@
       "room": "Top Bathroom",
       "category": "Cleaning Supplies",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Top Bathroom - Cleaning Supplies)",
+      "staging_area": "Lounge",
+      "description": "Move 1 large boxes to Lounge staging area (Floor 3) - Top Bathroom: Cleaning Supplies",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-22",
@@ -700,6 +748,7 @@
       "completed": false,
       "day": "2025-10-22",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -713,6 +762,7 @@
       "completed": false,
       "day": "2025-10-22",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -726,6 +776,7 @@
       "completed": false,
       "day": "2025-10-22",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -739,6 +790,7 @@
       "completed": false,
       "day": "2025-10-22",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Tuesday, October 22"
     },
     {
@@ -752,6 +804,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -765,6 +818,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -778,6 +832,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -795,6 +850,7 @@
       "order": 2,
       "heavy": false,
       "fragile": true,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -812,6 +868,7 @@
       "order": 2,
       "heavy": false,
       "fragile": true,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -829,6 +886,7 @@
       "order": 2,
       "heavy": false,
       "fragile": true,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -838,7 +896,8 @@
       "room": "Dining Room",
       "category": "Dining Ware",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Dining Room - Dining Ware)",
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 1) - Dining Room: Dining Ware",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-23",
@@ -852,7 +911,8 @@
       "room": "Dining Room",
       "category": "Decor & Centerpieces",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Dining Room - Decor & Centerpieces)",
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 1) - Dining Room: Decor & Centerpieces",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-23",
@@ -866,7 +926,8 @@
       "room": "Dining Room",
       "category": "Serving Items",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Dining Room - Serving Items)",
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 1) - Dining Room: Serving Items",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-23",
@@ -884,6 +945,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -897,6 +959,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -910,6 +973,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -923,6 +987,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -936,6 +1001,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -949,6 +1015,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -966,6 +1033,7 @@
       "order": 2,
       "heavy": false,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -983,6 +1051,7 @@
       "order": 2,
       "heavy": true,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -1000,6 +1069,7 @@
       "order": 2,
       "heavy": false,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -1009,7 +1079,8 @@
       "room": "In-Law",
       "category": "Mixed Storage",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (In-Law - Mixed Storage)",
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 0) - In-Law: Mixed Storage",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-23",
@@ -1023,7 +1094,8 @@
       "room": "In-Law",
       "category": "Furniture Items",
       "box_count": 2,
-      "description": "Move 2 packed boxes to Grow Room staging area (In-Law - Furniture Items)",
+      "staging_area": "Grow Room",
+      "description": "Move 2 small boxes to Grow Room staging area (Floor 0) - In-Law: Furniture Items",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-23",
@@ -1037,7 +1109,8 @@
       "room": "In-Law",
       "category": "Miscellaneous",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (In-Law - Miscellaneous)",
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 0) - In-Law: Miscellaneous",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-23",
@@ -1055,6 +1128,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -1068,6 +1142,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -1081,120 +1156,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 4,
-      "day_label": "Wednesday, October 23"
-    },
-    {
-      "id": "In-Law Bedroom_Clothes & Accessories_collection",
-      "type": "collection",
-      "icon": "\ud83d\udd0d",
-      "room": "In-Law Bedroom",
-      "category": "Clothes & Accessories",
-      "description": "Gather all clothes & accessories in In-Law Bedroom",
-      "assignee": "Brad",
-      "completed": false,
-      "day": "2025-10-23",
-      "order": 1,
-      "day_label": "Wednesday, October 23"
-    },
-    {
-      "id": "In-Law Bedroom_Personal Items_collection",
-      "type": "collection",
-      "icon": "\ud83d\udd0d",
-      "room": "In-Law Bedroom",
-      "category": "Personal Items",
-      "description": "Gather all personal items in In-Law Bedroom",
-      "assignee": "Brad",
-      "completed": false,
-      "day": "2025-10-23",
-      "order": 1,
-      "day_label": "Wednesday, October 23"
-    },
-    {
-      "id": "In-Law Bedroom_Clothes & Accessories_packing",
-      "type": "packing",
-      "icon": "\ud83d\udce6",
-      "room": "In-Law Bedroom",
-      "category": "Clothes & Accessories",
-      "box_count": 1,
-      "box_type": "large",
-      "description": "Pack 1 large boxes: In-Law Bedroom - Clothes & Accessories",
-      "assignee": "Andie",
-      "completed": false,
-      "day": "2025-10-23",
-      "order": 2,
-      "heavy": false,
-      "fragile": false,
-      "day_label": "Wednesday, October 23"
-    },
-    {
-      "id": "In-Law Bedroom_Personal Items_packing",
-      "type": "packing",
-      "icon": "\ud83d\udce6",
-      "room": "In-Law Bedroom",
-      "category": "Personal Items",
-      "box_count": 1,
-      "box_type": "large",
-      "description": "Pack 1 large boxes: In-Law Bedroom - Personal Items",
-      "assignee": "Andie",
-      "completed": false,
-      "day": "2025-10-23",
-      "order": 2,
-      "heavy": false,
-      "fragile": true,
-      "day_label": "Wednesday, October 23"
-    },
-    {
-      "id": "In-Law Bedroom_Clothes & Accessories_staging",
-      "type": "staging",
-      "icon": "\ud83d\ude9a",
-      "room": "In-Law Bedroom",
-      "category": "Clothes & Accessories",
-      "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (In-Law Bedroom - Clothes & Accessories)",
-      "assignee": "Andie",
-      "completed": false,
-      "day": "2025-10-23",
-      "order": 3,
-      "day_label": "Wednesday, October 23"
-    },
-    {
-      "id": "In-Law Bedroom_Personal Items_staging",
-      "type": "staging",
-      "icon": "\ud83d\ude9a",
-      "room": "In-Law Bedroom",
-      "category": "Personal Items",
-      "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (In-Law Bedroom - Personal Items)",
-      "assignee": "Andie",
-      "completed": false,
-      "day": "2025-10-23",
-      "order": 3,
-      "day_label": "Wednesday, October 23"
-    },
-    {
-      "id": "In-Law Bedroom_Clothes & Accessories_verification",
-      "type": "verification",
-      "icon": "\u2705",
-      "room": "In-Law Bedroom",
-      "category": "Clothes & Accessories",
-      "description": "Final sweep: In-Law Bedroom - verify clothes & accessories section empty",
-      "assignee": "Brad",
-      "completed": false,
-      "day": "2025-10-23",
-      "order": 4,
-      "day_label": "Wednesday, October 23"
-    },
-    {
-      "id": "In-Law Bedroom_Personal Items_verification",
-      "type": "verification",
-      "icon": "\u2705",
-      "room": "In-Law Bedroom",
-      "category": "Personal Items",
-      "description": "Final sweep: In-Law Bedroom - verify personal items section empty",
-      "assignee": "Brad",
-      "completed": false,
-      "day": "2025-10-23",
-      "order": 4,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -1208,6 +1170,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -1221,6 +1184,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -1234,6 +1198,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -1247,6 +1212,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -1264,6 +1230,7 @@
       "order": 2,
       "heavy": false,
       "fragile": true,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -1281,6 +1248,7 @@
       "order": 2,
       "heavy": false,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -1298,6 +1266,7 @@
       "order": 2,
       "heavy": false,
       "fragile": true,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -1315,6 +1284,7 @@
       "order": 2,
       "heavy": false,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -1324,7 +1294,8 @@
       "room": "Kitchen",
       "category": "Dishes & Cookware",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Kitchen - Dishes & Cookware)",
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 1) - Kitchen: Dishes & Cookware",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-23",
@@ -1338,7 +1309,8 @@
       "room": "Kitchen",
       "category": "Pantry Items",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Kitchen - Pantry Items)",
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 1) - Kitchen: Pantry Items",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-23",
@@ -1352,7 +1324,8 @@
       "room": "Kitchen",
       "category": "Small Appliances",
       "box_count": 2,
-      "description": "Move 2 packed boxes to Grow Room staging area (Kitchen - Small Appliances)",
+      "staging_area": "Grow Room",
+      "description": "Move 2 large boxes to Grow Room staging area (Floor 1) - Kitchen: Small Appliances",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-23",
@@ -1366,7 +1339,8 @@
       "room": "Kitchen",
       "category": "Utensils & Drawers",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Kitchen - Utensils & Drawers)",
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 1) - Kitchen: Utensils & Drawers",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-23",
@@ -1384,6 +1358,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -1397,6 +1372,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -1410,6 +1386,7 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
@@ -1423,32 +1400,279 @@
       "completed": false,
       "day": "2025-10-23",
       "order": 4,
+      "is_laundry": false,
+      "day_label": "Wednesday, October 23"
+    },
+    {
+      "id": "Office_Books_collection",
+      "type": "collection",
+      "icon": "\ud83d\udd0d",
+      "room": "Office",
+      "category": "Books",
+      "description": "Gather all books in Office",
+      "assignee": "Andie",
+      "completed": false,
+      "day": "2025-10-23",
+      "order": 1,
+      "is_laundry": false,
+      "day_label": "Wednesday, October 23"
+    },
+    {
+      "id": "Office_Files & Papers_collection",
+      "type": "collection",
+      "icon": "\ud83d\udd0d",
+      "room": "Office",
+      "category": "Files & Papers",
+      "description": "Gather all files & papers in Office",
+      "assignee": "Brad",
+      "completed": false,
+      "day": "2025-10-23",
+      "order": 1,
+      "is_laundry": false,
+      "day_label": "Wednesday, October 23"
+    },
+    {
+      "id": "Office_Electronics_collection",
+      "type": "collection",
+      "icon": "\ud83d\udd0d",
+      "room": "Office",
+      "category": "Electronics",
+      "description": "Gather all electronics in Office",
+      "assignee": "Brad",
+      "completed": false,
+      "day": "2025-10-23",
+      "order": 1,
+      "is_laundry": false,
+      "day_label": "Wednesday, October 23"
+    },
+    {
+      "id": "Office_Office Supplies_collection",
+      "type": "collection",
+      "icon": "\ud83d\udd0d",
+      "room": "Office",
+      "category": "Office Supplies",
+      "description": "Gather all office supplies in Office",
+      "assignee": "Brad",
+      "completed": false,
+      "day": "2025-10-23",
+      "order": 1,
+      "is_laundry": false,
+      "day_label": "Wednesday, October 23"
+    },
+    {
+      "id": "Office_Books_packing",
+      "type": "packing",
+      "icon": "\ud83d\udce6",
+      "room": "Office",
+      "category": "Books",
+      "box_count": 1,
+      "box_type": "small",
+      "description": "Pack 1 small boxes: Office - Books",
+      "assignee": "Andie",
+      "completed": false,
+      "day": "2025-10-23",
+      "order": 2,
+      "heavy": true,
+      "fragile": false,
+      "is_laundry": false,
+      "day_label": "Wednesday, October 23"
+    },
+    {
+      "id": "Office_Files & Papers_packing",
+      "type": "packing",
+      "icon": "\ud83d\udce6",
+      "room": "Office",
+      "category": "Files & Papers",
+      "box_count": 1,
+      "box_type": "large",
+      "description": "Pack 1 large boxes: Office - Files & Papers",
+      "assignee": "Andie",
+      "completed": false,
+      "day": "2025-10-23",
+      "order": 2,
+      "heavy": false,
+      "fragile": false,
+      "is_laundry": false,
+      "day_label": "Wednesday, October 23"
+    },
+    {
+      "id": "Office_Electronics_packing",
+      "type": "packing",
+      "icon": "\ud83d\udce6",
+      "room": "Office",
+      "category": "Electronics",
+      "box_count": 1,
+      "box_type": "large",
+      "description": "Pack 1 large boxes: Office - Electronics",
+      "assignee": "Andie",
+      "completed": false,
+      "day": "2025-10-23",
+      "order": 2,
+      "heavy": false,
+      "fragile": true,
+      "is_laundry": false,
+      "day_label": "Wednesday, October 23"
+    },
+    {
+      "id": "Office_Office Supplies_packing",
+      "type": "packing",
+      "icon": "\ud83d\udce6",
+      "room": "Office",
+      "category": "Office Supplies",
+      "box_count": 1,
+      "box_type": "large",
+      "description": "Pack 1 large boxes: Office - Office Supplies",
+      "assignee": "Andie",
+      "completed": false,
+      "day": "2025-10-23",
+      "order": 2,
+      "heavy": false,
+      "fragile": false,
+      "is_laundry": false,
+      "day_label": "Wednesday, October 23"
+    },
+    {
+      "id": "Office_Books_staging",
+      "type": "staging",
+      "icon": "\ud83d\ude9a",
+      "room": "Office",
+      "category": "Books",
+      "box_count": 1,
+      "staging_area": "Lounge",
+      "description": "Move 1 small boxes to Lounge staging area (Floor 2) - Office: Books",
+      "assignee": "Andie",
+      "completed": false,
+      "day": "2025-10-23",
+      "order": 3,
+      "day_label": "Wednesday, October 23"
+    },
+    {
+      "id": "Office_Files & Papers_staging",
+      "type": "staging",
+      "icon": "\ud83d\ude9a",
+      "room": "Office",
+      "category": "Files & Papers",
+      "box_count": 1,
+      "staging_area": "Lounge",
+      "description": "Move 1 large boxes to Lounge staging area (Floor 2) - Office: Files & Papers",
+      "assignee": "Andie",
+      "completed": false,
+      "day": "2025-10-23",
+      "order": 3,
+      "day_label": "Wednesday, October 23"
+    },
+    {
+      "id": "Office_Electronics_staging",
+      "type": "staging",
+      "icon": "\ud83d\ude9a",
+      "room": "Office",
+      "category": "Electronics",
+      "box_count": 1,
+      "staging_area": "Lounge",
+      "description": "Move 1 large boxes to Lounge staging area (Floor 2) - Office: Electronics",
+      "assignee": "Andie",
+      "completed": false,
+      "day": "2025-10-23",
+      "order": 3,
+      "day_label": "Wednesday, October 23"
+    },
+    {
+      "id": "Office_Office Supplies_staging",
+      "type": "staging",
+      "icon": "\ud83d\ude9a",
+      "room": "Office",
+      "category": "Office Supplies",
+      "box_count": 1,
+      "staging_area": "Lounge",
+      "description": "Move 1 large boxes to Lounge staging area (Floor 2) - Office: Office Supplies",
+      "assignee": "Andie",
+      "completed": false,
+      "day": "2025-10-23",
+      "order": 3,
+      "day_label": "Wednesday, October 23"
+    },
+    {
+      "id": "Office_Books_verification",
+      "type": "verification",
+      "icon": "\u2705",
+      "room": "Office",
+      "category": "Books",
+      "description": "Final sweep: Office - verify books section empty",
+      "assignee": "Brad",
+      "completed": false,
+      "day": "2025-10-23",
+      "order": 4,
+      "is_laundry": false,
+      "day_label": "Wednesday, October 23"
+    },
+    {
+      "id": "Office_Files & Papers_verification",
+      "type": "verification",
+      "icon": "\u2705",
+      "room": "Office",
+      "category": "Files & Papers",
+      "description": "Final sweep: Office - verify files & papers section empty",
+      "assignee": "Brad",
+      "completed": false,
+      "day": "2025-10-23",
+      "order": 4,
+      "is_laundry": false,
+      "day_label": "Wednesday, October 23"
+    },
+    {
+      "id": "Office_Electronics_verification",
+      "type": "verification",
+      "icon": "\u2705",
+      "room": "Office",
+      "category": "Electronics",
+      "description": "Final sweep: Office - verify electronics section empty",
+      "assignee": "Brad",
+      "completed": false,
+      "day": "2025-10-23",
+      "order": 4,
+      "is_laundry": false,
+      "day_label": "Wednesday, October 23"
+    },
+    {
+      "id": "Office_Office Supplies_verification",
+      "type": "verification",
+      "icon": "\u2705",
+      "room": "Office",
+      "category": "Office Supplies",
+      "description": "Final sweep: Office - verify office supplies section empty",
+      "assignee": "Brad",
+      "completed": false,
+      "day": "2025-10-23",
+      "order": 4,
+      "is_laundry": false,
       "day_label": "Wednesday, October 23"
     },
     {
       "id": "Bedroom_Clothes (Hanging)_collection",
       "type": "collection",
-      "icon": "\ud83d\udd0d",
+      "icon": "\ud83e\uddfa",
       "room": "Bedroom",
       "category": "Clothes (Hanging)",
-      "description": "Gather all clothes (hanging) in Bedroom",
+      "description": "\ud83e\uddfa WASH FIRST: Do all laundry for Clothes (Hanging). Once clean and dry, gather in Bedroom. Keep ONLY this week's outfits unpacked.",
       "assignee": "Brad",
       "completed": false,
       "day": "2025-10-24",
       "order": 1,
+      "is_laundry": true,
       "day_label": "Thursday, October 24"
     },
     {
       "id": "Bedroom_Clothes (Folded)_collection",
       "type": "collection",
-      "icon": "\ud83d\udd0d",
+      "icon": "\ud83e\uddfa",
       "room": "Bedroom",
       "category": "Clothes (Folded)",
-      "description": "Gather all clothes (folded) in Bedroom",
+      "description": "\ud83e\uddfa WASH FIRST: Do all laundry for Clothes (Folded). Once clean and dry, gather in Bedroom. Keep ONLY this week's outfits unpacked.",
       "assignee": "Brad",
       "completed": false,
       "day": "2025-10-24",
       "order": 1,
+      "is_laundry": true,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1462,19 +1686,21 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
       "id": "Bedroom_Linens & Bedding_collection",
       "type": "collection",
-      "icon": "\ud83d\udd0d",
+      "icon": "\ud83e\uddfa",
       "room": "Bedroom",
       "category": "Linens & Bedding",
-      "description": "Gather all linens & bedding in Bedroom",
+      "description": "\ud83e\uddfa WASH FIRST: Do all laundry for Linens & Bedding. Once clean and dry, gather in Bedroom. Keep ONLY this week's outfits unpacked.",
       "assignee": "Brad",
       "completed": false,
       "day": "2025-10-24",
       "order": 1,
+      "is_laundry": true,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1488,6 +1714,7 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1498,13 +1725,14 @@
       "category": "Clothes (Hanging)",
       "box_count": 3,
       "box_type": "wardrobe",
-      "description": "Pack 3 wardrobe boxes: Bedroom - Clothes (Hanging)",
+      "description": "Pack 3 wardrobe boxes: Bedroom - Clothes (Hanging) (clean laundry only, this week's outfits stay out)",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-24",
       "order": 2,
       "heavy": false,
       "fragile": false,
+      "is_laundry": true,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1515,13 +1743,14 @@
       "category": "Clothes (Folded)",
       "box_count": 1,
       "box_type": "large",
-      "description": "Pack 1 large boxes: Bedroom - Clothes (Folded)",
+      "description": "Pack 1 large boxes: Bedroom - Clothes (Folded) (clean laundry only, this week's outfits stay out)",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-24",
       "order": 2,
       "heavy": false,
       "fragile": false,
+      "is_laundry": true,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1539,6 +1768,7 @@
       "order": 2,
       "heavy": false,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1549,13 +1779,14 @@
       "category": "Linens & Bedding",
       "box_count": 1,
       "box_type": "large",
-      "description": "Pack 1 large boxes: Bedroom - Linens & Bedding",
+      "description": "Pack 1 large boxes: Bedroom - Linens & Bedding (clean laundry only, this week's outfits stay out)",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-24",
       "order": 2,
       "heavy": false,
       "fragile": false,
+      "is_laundry": true,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1573,6 +1804,7 @@
       "order": 2,
       "heavy": false,
       "fragile": true,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1582,7 +1814,8 @@
       "room": "Bedroom",
       "category": "Clothes (Hanging)",
       "box_count": 3,
-      "description": "Move 3 packed boxes to Grow Room staging area (Bedroom - Clothes (Hanging))",
+      "staging_area": "Lounge",
+      "description": "Move 3 wardrobe boxes to Lounge staging area (Floor 2) - Bedroom: Clothes (Hanging)",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-24",
@@ -1596,7 +1829,8 @@
       "room": "Bedroom",
       "category": "Clothes (Folded)",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Bedroom - Clothes (Folded))",
+      "staging_area": "Lounge",
+      "description": "Move 1 large boxes to Lounge staging area (Floor 2) - Bedroom: Clothes (Folded)",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-24",
@@ -1610,7 +1844,8 @@
       "room": "Bedroom",
       "category": "Shoes & Accessories",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Bedroom - Shoes & Accessories)",
+      "staging_area": "Lounge",
+      "description": "Move 1 large boxes to Lounge staging area (Floor 2) - Bedroom: Shoes & Accessories",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-24",
@@ -1624,7 +1859,8 @@
       "room": "Bedroom",
       "category": "Linens & Bedding",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Bedroom - Linens & Bedding)",
+      "staging_area": "Lounge",
+      "description": "Move 1 large boxes to Lounge staging area (Floor 2) - Bedroom: Linens & Bedding",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-24",
@@ -1638,7 +1874,8 @@
       "room": "Bedroom",
       "category": "Personal Items",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Bedroom - Personal Items)",
+      "staging_area": "Lounge",
+      "description": "Move 1 large boxes to Lounge staging area (Floor 2) - Bedroom: Personal Items",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-24",
@@ -1651,11 +1888,12 @@
       "icon": "\u2705",
       "room": "Bedroom",
       "category": "Clothes (Hanging)",
-      "description": "Final sweep: Bedroom - verify clothes (hanging) section empty",
+      "description": "Final sweep: Bedroom - verify only this week's clothes (hanging) remain, all else packed",
       "assignee": "Brad",
       "completed": false,
       "day": "2025-10-24",
       "order": 4,
+      "is_laundry": true,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1664,11 +1902,12 @@
       "icon": "\u2705",
       "room": "Bedroom",
       "category": "Clothes (Folded)",
-      "description": "Final sweep: Bedroom - verify clothes (folded) section empty",
+      "description": "Final sweep: Bedroom - verify only this week's clothes (folded) remain, all else packed",
       "assignee": "Brad",
       "completed": false,
       "day": "2025-10-24",
       "order": 4,
+      "is_laundry": true,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1682,6 +1921,7 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1690,11 +1930,12 @@
       "icon": "\u2705",
       "room": "Bedroom",
       "category": "Linens & Bedding",
-      "description": "Final sweep: Bedroom - verify linens & bedding section empty",
+      "description": "Final sweep: Bedroom - verify only this week's linens & bedding remain, all else packed",
       "assignee": "Brad",
       "completed": false,
       "day": "2025-10-24",
       "order": 4,
+      "is_laundry": true,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1708,6 +1949,7 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1721,6 +1963,7 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1734,6 +1977,7 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1747,6 +1991,7 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1760,6 +2005,7 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1777,6 +2023,7 @@
       "order": 2,
       "heavy": false,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1794,6 +2041,7 @@
       "order": 2,
       "heavy": false,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1811,6 +2059,7 @@
       "order": 2,
       "heavy": true,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1828,6 +2077,7 @@
       "order": 2,
       "heavy": false,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1837,7 +2087,8 @@
       "room": "Dog Room",
       "category": "Pet Supplies",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Dog Room - Pet Supplies)",
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 1) - Dog Room: Pet Supplies",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-24",
@@ -1851,7 +2102,8 @@
       "room": "Dog Room",
       "category": "Toys & Accessories",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Dog Room - Toys & Accessories)",
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 1) - Dog Room: Toys & Accessories",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-24",
@@ -1865,7 +2117,8 @@
       "room": "Dog Room",
       "category": "Food & Treats",
       "box_count": 2,
-      "description": "Move 2 packed boxes to Grow Room staging area (Dog Room - Food & Treats)",
+      "staging_area": "Grow Room",
+      "description": "Move 2 small boxes to Grow Room staging area (Floor 1) - Dog Room: Food & Treats",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-24",
@@ -1879,7 +2132,8 @@
       "room": "Dog Room",
       "category": "Bedding & Crates",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Dog Room - Bedding & Crates)",
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 1) - Dog Room: Bedding & Crates",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-24",
@@ -1897,6 +2151,7 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1910,6 +2165,7 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1923,6 +2179,7 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1936,6 +2193,129 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 4,
+      "is_laundry": false,
+      "day_label": "Thursday, October 24"
+    },
+    {
+      "id": "In-Law Bedroom_Clothes & Accessories_collection",
+      "type": "collection",
+      "icon": "\ud83e\uddfa",
+      "room": "In-Law Bedroom",
+      "category": "Clothes & Accessories",
+      "description": "\ud83e\uddfa WASH FIRST: Do all laundry for Clothes & Accessories. Once clean and dry, gather in In-Law Bedroom. Keep ONLY this week's outfits unpacked.",
+      "assignee": "Brad",
+      "completed": false,
+      "day": "2025-10-24",
+      "order": 1,
+      "is_laundry": true,
+      "day_label": "Thursday, October 24"
+    },
+    {
+      "id": "In-Law Bedroom_Personal Items_collection",
+      "type": "collection",
+      "icon": "\ud83d\udd0d",
+      "room": "In-Law Bedroom",
+      "category": "Personal Items",
+      "description": "Gather all personal items in In-Law Bedroom",
+      "assignee": "Brad",
+      "completed": false,
+      "day": "2025-10-24",
+      "order": 1,
+      "is_laundry": false,
+      "day_label": "Thursday, October 24"
+    },
+    {
+      "id": "In-Law Bedroom_Clothes & Accessories_packing",
+      "type": "packing",
+      "icon": "\ud83d\udce6",
+      "room": "In-Law Bedroom",
+      "category": "Clothes & Accessories",
+      "box_count": 1,
+      "box_type": "large",
+      "description": "Pack 1 large boxes: In-Law Bedroom - Clothes & Accessories (clean laundry only, this week's outfits stay out)",
+      "assignee": "Andie",
+      "completed": false,
+      "day": "2025-10-24",
+      "order": 2,
+      "heavy": false,
+      "fragile": false,
+      "is_laundry": true,
+      "day_label": "Thursday, October 24"
+    },
+    {
+      "id": "In-Law Bedroom_Personal Items_packing",
+      "type": "packing",
+      "icon": "\ud83d\udce6",
+      "room": "In-Law Bedroom",
+      "category": "Personal Items",
+      "box_count": 1,
+      "box_type": "large",
+      "description": "Pack 1 large boxes: In-Law Bedroom - Personal Items",
+      "assignee": "Andie",
+      "completed": false,
+      "day": "2025-10-24",
+      "order": 2,
+      "heavy": false,
+      "fragile": true,
+      "is_laundry": false,
+      "day_label": "Thursday, October 24"
+    },
+    {
+      "id": "In-Law Bedroom_Clothes & Accessories_staging",
+      "type": "staging",
+      "icon": "\ud83d\ude9a",
+      "room": "In-Law Bedroom",
+      "category": "Clothes & Accessories",
+      "box_count": 1,
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 0) - In-Law Bedroom: Clothes & Accessories",
+      "assignee": "Andie",
+      "completed": false,
+      "day": "2025-10-24",
+      "order": 3,
+      "day_label": "Thursday, October 24"
+    },
+    {
+      "id": "In-Law Bedroom_Personal Items_staging",
+      "type": "staging",
+      "icon": "\ud83d\ude9a",
+      "room": "In-Law Bedroom",
+      "category": "Personal Items",
+      "box_count": 1,
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 0) - In-Law Bedroom: Personal Items",
+      "assignee": "Andie",
+      "completed": false,
+      "day": "2025-10-24",
+      "order": 3,
+      "day_label": "Thursday, October 24"
+    },
+    {
+      "id": "In-Law Bedroom_Clothes & Accessories_verification",
+      "type": "verification",
+      "icon": "\u2705",
+      "room": "In-Law Bedroom",
+      "category": "Clothes & Accessories",
+      "description": "Final sweep: In-Law Bedroom - verify only this week's clothes & accessories remain, all else packed",
+      "assignee": "Brad",
+      "completed": false,
+      "day": "2025-10-24",
+      "order": 4,
+      "is_laundry": true,
+      "day_label": "Thursday, October 24"
+    },
+    {
+      "id": "In-Law Bedroom_Personal Items_verification",
+      "type": "verification",
+      "icon": "\u2705",
+      "room": "In-Law Bedroom",
+      "category": "Personal Items",
+      "description": "Final sweep: In-Law Bedroom - verify personal items section empty",
+      "assignee": "Brad",
+      "completed": false,
+      "day": "2025-10-24",
+      "order": 4,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1949,6 +2329,7 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1962,6 +2343,7 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1975,6 +2357,7 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -1988,6 +2371,7 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 1,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -2005,6 +2389,7 @@
       "order": 2,
       "heavy": false,
       "fragile": true,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -2022,6 +2407,7 @@
       "order": 2,
       "heavy": true,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -2039,6 +2425,7 @@
       "order": 2,
       "heavy": false,
       "fragile": true,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -2056,6 +2443,7 @@
       "order": 2,
       "heavy": false,
       "fragile": false,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -2065,7 +2453,8 @@
       "room": "Living Room",
       "category": "Decor & Art",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Living Room - Decor & Art)",
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 1) - Living Room: Decor & Art",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-24",
@@ -2079,7 +2468,8 @@
       "room": "Living Room",
       "category": "Media & Books",
       "box_count": 5,
-      "description": "Move 5 packed boxes to Grow Room staging area (Living Room - Media & Books)",
+      "staging_area": "Grow Room",
+      "description": "Move 5 small boxes to Grow Room staging area (Floor 1) - Living Room: Media & Books",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-24",
@@ -2093,7 +2483,8 @@
       "room": "Living Room",
       "category": "Electronics & Cables",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Living Room - Electronics & Cables)",
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 1) - Living Room: Electronics & Cables",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-24",
@@ -2107,7 +2498,8 @@
       "room": "Living Room",
       "category": "Cushions & Throws",
       "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Living Room - Cushions & Throws)",
+      "staging_area": "Grow Room",
+      "description": "Move 1 large boxes to Grow Room staging area (Floor 1) - Living Room: Cushions & Throws",
       "assignee": "Andie",
       "completed": false,
       "day": "2025-10-24",
@@ -2125,6 +2517,7 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -2138,6 +2531,7 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -2151,6 +2545,7 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 4,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     },
     {
@@ -2164,234 +2559,7 @@
       "completed": false,
       "day": "2025-10-24",
       "order": 4,
-      "day_label": "Thursday, October 24"
-    },
-    {
-      "id": "Lounge_Decor & Art_collection",
-      "type": "collection",
-      "icon": "\ud83d\udd0d",
-      "room": "Lounge",
-      "category": "Decor & Art",
-      "description": "Gather all decor & art in Lounge",
-      "assignee": "Brad",
-      "completed": false,
-      "day": "2025-10-24",
-      "order": 1,
-      "day_label": "Thursday, October 24"
-    },
-    {
-      "id": "Lounge_Media (Books/DVDs)_collection",
-      "type": "collection",
-      "icon": "\ud83d\udd0d",
-      "room": "Lounge",
-      "category": "Media (Books/DVDs)",
-      "description": "Gather all media (books/dvds) in Lounge",
-      "assignee": "Andie",
-      "completed": false,
-      "day": "2025-10-24",
-      "order": 1,
-      "day_label": "Thursday, October 24"
-    },
-    {
-      "id": "Lounge_Cushions & Textiles_collection",
-      "type": "collection",
-      "icon": "\ud83d\udd0d",
-      "room": "Lounge",
-      "category": "Cushions & Textiles",
-      "description": "Gather all cushions & textiles in Lounge",
-      "assignee": "Brad",
-      "completed": false,
-      "day": "2025-10-24",
-      "order": 1,
-      "day_label": "Thursday, October 24"
-    },
-    {
-      "id": "Lounge_Miscellaneous_collection",
-      "type": "collection",
-      "icon": "\ud83d\udd0d",
-      "room": "Lounge",
-      "category": "Miscellaneous",
-      "description": "Gather all miscellaneous in Lounge",
-      "assignee": "Brad",
-      "completed": false,
-      "day": "2025-10-24",
-      "order": 1,
-      "day_label": "Thursday, October 24"
-    },
-    {
-      "id": "Lounge_Decor & Art_packing",
-      "type": "packing",
-      "icon": "\ud83d\udce6",
-      "room": "Lounge",
-      "category": "Decor & Art",
-      "box_count": 1,
-      "box_type": "large",
-      "description": "Pack 1 large boxes: Lounge - Decor & Art",
-      "assignee": "Andie",
-      "completed": false,
-      "day": "2025-10-24",
-      "order": 2,
-      "heavy": false,
-      "fragile": true,
-      "day_label": "Thursday, October 24"
-    },
-    {
-      "id": "Lounge_Media (Books/DVDs)_packing",
-      "type": "packing",
-      "icon": "\ud83d\udce6",
-      "room": "Lounge",
-      "category": "Media (Books/DVDs)",
-      "box_count": 2,
-      "box_type": "small",
-      "description": "Pack 2 small boxes: Lounge - Media (Books/DVDs)",
-      "assignee": "Andie",
-      "completed": false,
-      "day": "2025-10-24",
-      "order": 2,
-      "heavy": true,
-      "fragile": false,
-      "day_label": "Thursday, October 24"
-    },
-    {
-      "id": "Lounge_Cushions & Textiles_packing",
-      "type": "packing",
-      "icon": "\ud83d\udce6",
-      "room": "Lounge",
-      "category": "Cushions & Textiles",
-      "box_count": 1,
-      "box_type": "large",
-      "description": "Pack 1 large boxes: Lounge - Cushions & Textiles",
-      "assignee": "Andie",
-      "completed": false,
-      "day": "2025-10-24",
-      "order": 2,
-      "heavy": false,
-      "fragile": false,
-      "day_label": "Thursday, October 24"
-    },
-    {
-      "id": "Lounge_Miscellaneous_packing",
-      "type": "packing",
-      "icon": "\ud83d\udce6",
-      "room": "Lounge",
-      "category": "Miscellaneous",
-      "box_count": 1,
-      "box_type": "large",
-      "description": "Pack 1 large boxes: Lounge - Miscellaneous",
-      "assignee": "Andie",
-      "completed": false,
-      "day": "2025-10-24",
-      "order": 2,
-      "heavy": false,
-      "fragile": false,
-      "day_label": "Thursday, October 24"
-    },
-    {
-      "id": "Lounge_Decor & Art_staging",
-      "type": "staging",
-      "icon": "\ud83d\ude9a",
-      "room": "Lounge",
-      "category": "Decor & Art",
-      "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Lounge - Decor & Art)",
-      "assignee": "Andie",
-      "completed": false,
-      "day": "2025-10-24",
-      "order": 3,
-      "day_label": "Thursday, October 24"
-    },
-    {
-      "id": "Lounge_Media (Books/DVDs)_staging",
-      "type": "staging",
-      "icon": "\ud83d\ude9a",
-      "room": "Lounge",
-      "category": "Media (Books/DVDs)",
-      "box_count": 2,
-      "description": "Move 2 packed boxes to Grow Room staging area (Lounge - Media (Books/DVDs))",
-      "assignee": "Andie",
-      "completed": false,
-      "day": "2025-10-24",
-      "order": 3,
-      "day_label": "Thursday, October 24"
-    },
-    {
-      "id": "Lounge_Cushions & Textiles_staging",
-      "type": "staging",
-      "icon": "\ud83d\ude9a",
-      "room": "Lounge",
-      "category": "Cushions & Textiles",
-      "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Lounge - Cushions & Textiles)",
-      "assignee": "Andie",
-      "completed": false,
-      "day": "2025-10-24",
-      "order": 3,
-      "day_label": "Thursday, October 24"
-    },
-    {
-      "id": "Lounge_Miscellaneous_staging",
-      "type": "staging",
-      "icon": "\ud83d\ude9a",
-      "room": "Lounge",
-      "category": "Miscellaneous",
-      "box_count": 1,
-      "description": "Move 1 packed boxes to Grow Room staging area (Lounge - Miscellaneous)",
-      "assignee": "Andie",
-      "completed": false,
-      "day": "2025-10-24",
-      "order": 3,
-      "day_label": "Thursday, October 24"
-    },
-    {
-      "id": "Lounge_Decor & Art_verification",
-      "type": "verification",
-      "icon": "\u2705",
-      "room": "Lounge",
-      "category": "Decor & Art",
-      "description": "Final sweep: Lounge - verify decor & art section empty",
-      "assignee": "Brad",
-      "completed": false,
-      "day": "2025-10-24",
-      "order": 4,
-      "day_label": "Thursday, October 24"
-    },
-    {
-      "id": "Lounge_Media (Books/DVDs)_verification",
-      "type": "verification",
-      "icon": "\u2705",
-      "room": "Lounge",
-      "category": "Media (Books/DVDs)",
-      "description": "Final sweep: Lounge - verify media (books/dvds) section empty",
-      "assignee": "Brad",
-      "completed": false,
-      "day": "2025-10-24",
-      "order": 4,
-      "day_label": "Thursday, October 24"
-    },
-    {
-      "id": "Lounge_Cushions & Textiles_verification",
-      "type": "verification",
-      "icon": "\u2705",
-      "room": "Lounge",
-      "category": "Cushions & Textiles",
-      "description": "Final sweep: Lounge - verify cushions & textiles section empty",
-      "assignee": "Brad",
-      "completed": false,
-      "day": "2025-10-24",
-      "order": 4,
-      "day_label": "Thursday, October 24"
-    },
-    {
-      "id": "Lounge_Miscellaneous_verification",
-      "type": "verification",
-      "icon": "\u2705",
-      "room": "Lounge",
-      "category": "Miscellaneous",
-      "description": "Final sweep: Lounge - verify miscellaneous section empty",
-      "assignee": "Brad",
-      "completed": false,
-      "day": "2025-10-24",
-      "order": 4,
+      "is_laundry": false,
       "day_label": "Thursday, October 24"
     }
   ],
@@ -2813,5 +2981,5 @@
     "Andie": 91,
     "Brad": 77
   },
-  "generated_at": "2025-10-20T20:09:30.220713"
+  "generated_at": "2025-10-21T10:28:42.193058"
 }

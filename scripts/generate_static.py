@@ -127,35 +127,117 @@ class StaticHTMLGenerator:
             font-size: 1.1rem;
         }}
 
-        .day-columns {{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            padding: 20px;
+        .day-content {{
             background: var(--bg-secondary);
             border: 1px solid var(--border);
             border-top: none;
             border-radius: 0 0 8px 8px;
+            padding: 10px;
+        }}
+
+        .room-section {{
+            background: var(--bg-primary);
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }}
+
+        .room-header {{
+            background: var(--bg-tertiary);
+            padding: 12px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.2s;
+        }}
+
+        .room-header:hover {{
+            background: var(--surface-hover);
+        }}
+
+        .room-header.active {{
+            background: var(--primary);
+        }}
+
+        .room-title {{
+            font-weight: 600;
+            font-size: 1.05rem;
+        }}
+
+        .room-progress {{
+            font-size: 0.85rem;
+            opacity: 0.8;
+            margin-left: 10px;
+        }}
+
+        .room-icon {{
+            font-size: 1rem;
+            transition: transform 0.3s;
+        }}
+
+        .room-header.active .room-icon {{
+            transform: rotate(180deg);
+        }}
+
+        .room-content {{
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }}
+
+        .room-content.active {{
+            max-height: 5000px;
+        }}
+
+        .room-columns {{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            padding: 15px;
+        }}
+
+        .person-column {{
+            background: var(--bg-secondary);
+            padding: 12px;
+            border-radius: 6px;
         }}
 
         .person-column-header {{
             font-weight: 600;
-            font-size: 1rem;
-            margin-bottom: 15px;
-            padding: 10px;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+            padding: 8px;
             background: var(--bg-tertiary);
             border-radius: 6px;
             text-align: center;
         }}
 
+        .category-group {{
+            margin-bottom: 20px;
+            padding-left: 8px;
+            border-left: 3px solid var(--primary);
+        }}
+
+        .category-header {{
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            padding: 4px 8px;
+            background: rgba(59, 130, 246, 0.1);
+            border-radius: 4px;
+        }}
+
         .task-item {{
             display: flex;
             align-items: center;
-            gap: 12px;
-            padding: 12px;
+            gap: 10px;
+            padding: 10px;
             background: var(--bg-primary);
             border-radius: 6px;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             border: 1px solid var(--border);
             transition: all 0.2s;
         }}
@@ -169,25 +251,25 @@ class StaticHTMLGenerator:
         .task-item.completed .task-text {{ text-decoration: line-through; }}
 
         .task-item input[type="checkbox"] {{
-            width: 20px;
-            height: 20px;
+            width: 18px;
+            height: 18px;
             cursor: pointer;
         }}
 
         .task-text {{
             flex: 1;
-            font-size: 1rem;
+            font-size: 0.95rem;
             cursor: pointer;
         }}
 
         .task-assignee-select {{
-            padding: 6px 10px;
+            padding: 5px 8px;
             background: var(--bg-tertiary);
             border: 1px solid var(--border);
             border-radius: 6px;
             color: var(--text-primary);
             cursor: pointer;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
         }}
 
         .badge {{
@@ -210,8 +292,14 @@ class StaticHTMLGenerator:
             border: 1px solid var(--success);
         }}
 
+        .badge-warning {{
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--warning);
+            border: 1px solid var(--warning);
+        }}
+
         @media (max-width: 768px) {{
-            .day-columns {{ grid-template-columns: 1fr; }}
+            .room-columns {{ grid-template-columns: 1fr; }}
             .stats {{ grid-template-columns: repeat(2, 1fr); }}
         }}
     </style>
@@ -242,7 +330,7 @@ class StaticHTMLGenerator:
         </header>
 
         <div class="section">
-            <h2>✅ Moving Tasks</h2>
+            <h2>✅ Moving Tasks (Room-by-Room)</h2>
             <div class="progress-bar">
                 <div class="progress-fill" id="taskProgress" style="width: 0%"></div>
             </div>
@@ -273,13 +361,15 @@ class StaticHTMLGenerator:
             const tasksByDay = {{}};
             taskData.tasks.forEach(task => {{
                 const day = task.day_label || 'Unscheduled';
-                if (!tasksByDay[day]) tasksByDay[day] = [];
-                tasksByDay[day].push(task);
+                if (!tasksByDay[day]) tasksByDay[day] = {{}};
+                const room = task.room;
+                if (!tasksByDay[day][room]) tasksByDay[day][room] = [];
+                tasksByDay[day][room].push(task);
             }});
 
             container.innerHTML = '';
 
-            Object.entries(tasksByDay).forEach(([day, tasks]) => {{
+            Object.entries(tasksByDay).forEach(([day, rooms]) => {{
                 const dayDiv = document.createElement('div');
                 dayDiv.className = 'day-tasks';
 
@@ -287,35 +377,125 @@ class StaticHTMLGenerator:
                 dayHeader.className = 'day-header-bar';
                 dayHeader.textContent = day;
 
-                const dayColumns = document.createElement('div');
-                dayColumns.className = 'day-columns';
+                const dayContent = document.createElement('div');
+                dayContent.className = 'day-content';
 
-                const andieCol = document.createElement('div');
-                const andieHeader = document.createElement('div');
-                andieHeader.className = 'person-column-header';
-                andieHeader.innerHTML = '<span class="badge badge-success">Andie\\'s Tasks</span>';
-                andieCol.appendChild(andieHeader);
+                Object.entries(rooms).forEach(([room, tasks]) => {{
+                    const roomSection = createRoomSection(room, tasks, day);
+                    dayContent.appendChild(roomSection);
+                }});
 
-                const andieTasks = tasks.filter(t => t.assignee === 'Andie');
-                andieTasks.forEach(task => andieCol.appendChild(createTaskElement(task)));
-
-                const bradCol = document.createElement('div');
-                const bradHeader = document.createElement('div');
-                bradHeader.className = 'person-column-header';
-                bradHeader.innerHTML = '<span class="badge badge-primary">Brad\\'s Tasks</span>';
-                bradCol.appendChild(bradHeader);
-
-                const bradTasks = tasks.filter(t => t.assignee === 'Brad');
-                bradTasks.forEach(task => bradCol.appendChild(createTaskElement(task)));
-
-                dayColumns.appendChild(andieCol);
-                dayColumns.appendChild(bradCol);
                 dayDiv.appendChild(dayHeader);
-                dayDiv.appendChild(dayColumns);
+                dayDiv.appendChild(dayContent);
                 container.appendChild(dayDiv);
             }});
 
             updateTaskStats();
+        }}
+
+        function createRoomSection(room, tasks, day) {{
+            const section = document.createElement('div');
+            section.className = 'room-section';
+
+            const completed = tasks.filter(t => t.completed).length;
+            const total = tasks.length;
+            const progress = total > 0 ? Math.round((completed / total) * 100) : 0;
+
+            const header = document.createElement('div');
+            header.className = 'room-header';
+            header.onclick = () => toggleRoom(header);
+
+            const titleDiv = document.createElement('div');
+            titleDiv.style.display = 'flex';
+            titleDiv.style.alignItems = 'center';
+
+            const title = document.createElement('span');
+            title.className = 'room-title';
+            title.textContent = room;
+
+            const progressText = document.createElement('span');
+            progressText.className = 'room-progress';
+            progressText.textContent = `(${{completed}}/${{total}} - ${{progress}}%)`;
+
+            titleDiv.appendChild(title);
+            titleDiv.appendChild(progressText);
+
+            const icon = document.createElement('div');
+            icon.className = 'room-icon';
+            icon.textContent = '▼';
+
+            header.appendChild(titleDiv);
+            header.appendChild(icon);
+
+            const content = document.createElement('div');
+            content.className = 'room-content';
+
+            const columns = document.createElement('div');
+            columns.className = 'room-columns';
+
+            const andieCol = document.createElement('div');
+            andieCol.className = 'person-column';
+            const andieHeader = document.createElement('div');
+            andieHeader.className = 'person-column-header';
+            andieHeader.innerHTML = '<span class="badge badge-success">Andie</span>';
+            andieCol.appendChild(andieHeader);
+
+            const bradCol = document.createElement('div');
+            bradCol.className = 'person-column';
+            const bradHeader = document.createElement('div');
+            bradHeader.className = 'person-column-header';
+            bradHeader.innerHTML = '<span class="badge badge-primary">Brad</span>';
+            bradCol.appendChild(bradHeader);
+
+            const tasksByCategory = {{}};
+            tasks.forEach(task => {{
+                const category = task.category;
+                if (!tasksByCategory[category]) tasksByCategory[category] = [];
+                tasksByCategory[category].push(task);
+            }});
+
+            Object.entries(tasksByCategory).forEach(([category, catTasks]) => {{
+                const andieTasks = catTasks.filter(t => t.assignee === 'Andie');
+                const bradTasks = catTasks.filter(t => t.assignee === 'Brad');
+
+                if (andieTasks.length > 0) {{
+                    const categoryGroup = createCategoryGroup(category, andieTasks);
+                    andieCol.appendChild(categoryGroup);
+                }}
+
+                if (bradTasks.length > 0) {{
+                    const categoryGroup = createCategoryGroup(category, bradTasks);
+                    bradCol.appendChild(categoryGroup);
+                }}
+            }});
+
+            columns.appendChild(andieCol);
+            columns.appendChild(bradCol);
+            content.appendChild(columns);
+
+            section.appendChild(header);
+            section.appendChild(content);
+
+            return section;
+        }}
+
+        function createCategoryGroup(category, tasks) {{
+            const group = document.createElement('div');
+            group.className = 'category-group';
+
+            const header = document.createElement('div');
+            header.className = 'category-header';
+            header.textContent = category;
+
+            group.appendChild(header);
+
+            tasks.sort((a, b) => (a.order || 0) - (b.order || 0));
+
+            tasks.forEach(task => {{
+                group.appendChild(createTaskElement(task));
+            }});
+
+            return group;
         }}
 
         function createTaskElement(task) {{
@@ -346,6 +526,12 @@ class StaticHTMLGenerator:
             taskDiv.appendChild(select);
 
             return taskDiv;
+        }}
+
+        function toggleRoom(header) {{
+            header.classList.toggle('active');
+            const content = header.nextElementSibling;
+            content.classList.toggle('active');
         }}
 
         function toggleTask(taskId) {{
@@ -489,7 +675,7 @@ def main():
     print("Next steps:")
     print("  1. Open docs/index.html in your browser to test")
     print("  2. Commit and push to GitHub")
-    print("  3. Configure GitHub Pages: Settings → Pages → /docs folder")
+    print("  3. GitHub Pages will auto-update")
     print()
 
 

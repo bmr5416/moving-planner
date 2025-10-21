@@ -17,6 +17,15 @@ class TaskGenerator:
         with open(os.path.join(self.data_dir, 'calculation_formulas.json'), 'r') as f:
             self.formulas = json.load(f)
 
+    def determine_staging_area(self, floor):
+        return "Lounge" if floor >= 2 else "Grow Room"
+
+    def is_laundry_category(self, category_name, room_name):
+        laundry_keywords = ['clothes', 'linens', 'bedding']
+        laundry_rooms = ['Bedroom', 'In-Law Bedroom', 'Garage']
+        category_lower = category_name.lower()
+        return room_name in laundry_rooms and any(kw in category_lower for kw in laundry_keywords)
+
     def generate_tasks_for_category(self, room_name, category_name, category_data):
         tasks = []
         box_count = category_data['boxes']
@@ -24,23 +33,43 @@ class TaskGenerator:
         is_heavy = category_data.get('heavy', False)
         is_fragile = category_data.get('fragile', False)
 
-        # 1. Collection Task
+        room_floor = self.rooms[room_name]['floor']
+        staging_area = self.determine_staging_area(room_floor)
+        is_laundry = self.is_laundry_category(category_name, room_name)
+
+        if is_laundry:
+            collection_desc = f"🧺 WASH FIRST: Do all laundry for {category_name}. Once clean and dry, gather in {room_name}. Keep ONLY this week's outfits unpacked."
+            collection_icon = "🧺"
+        else:
+            collection_desc = self.templates['collection']['template'].format(
+                category=category_name.lower(),
+                room=room_name
+            )
+            collection_icon = self.templates['collection']['icon']
+
         collection_task = {
             'id': f"{room_name}_{category_name}_collection",
             'type': 'collection',
-            'icon': self.templates['collection']['icon'],
+            'icon': collection_icon,
             'room': room_name,
             'category': category_name,
-            'description': self.templates['collection']['template'].format(
-                category=category_name.lower(),
-                room=room_name
-            ),
+            'description': collection_desc,
             'assignee': 'Brad' if not is_heavy else 'Andie',
             'completed': False,
-            'day': None,  # Will be assigned based on priority
-            'order': 1
+            'day': None,
+            'order': 1,
+            'is_laundry': is_laundry
         }
         tasks.append(collection_task)
+        packing_desc = self.templates['packing']['template'].format(
+            box_count=box_count,
+            box_type=box_type,
+            room=room_name,
+            category=category_name
+        )
+        if is_laundry:
+            packing_desc += " (clean laundry only, this week's outfits stay out)"
+
         packing_task = {
             'id': f"{room_name}_{category_name}_packing",
             'type': 'packing',
@@ -49,18 +78,14 @@ class TaskGenerator:
             'category': category_name,
             'box_count': box_count,
             'box_type': box_type,
-            'description': self.templates['packing']['template'].format(
-                box_count=box_count,
-                box_type=box_type,
-                room=room_name,
-                category=category_name
-            ),
-            'assignee': 'Andie',  # Physical packing always Andie
+            'description': packing_desc,
+            'assignee': 'Andie',
             'completed': False,
             'day': None,
             'order': 2,
             'heavy': is_heavy,
-            'fragile': is_fragile
+            'fragile': is_fragile,
+            'is_laundry': is_laundry
         }
         tasks.append(packing_task)
         staging_task = {
@@ -70,29 +95,33 @@ class TaskGenerator:
             'room': room_name,
             'category': category_name,
             'box_count': box_count,
-            'description': self.templates['staging']['template'].format(
-                box_count=box_count
-            ) + f" ({room_name} - {category_name})",
-            'assignee': 'Andie',  # Moving boxes always Andie
+            'staging_area': staging_area,
+            'description': f"Move {box_count} {box_type} boxes to {staging_area} staging area (Floor {room_floor}) - {room_name}: {category_name}",
+            'assignee': 'Andie',
             'completed': False,
             'day': None,
             'order': 3
         }
         tasks.append(staging_task)
+        verification_desc = self.templates['verification']['template'].format(
+            room=room_name,
+            category=category_name.lower()
+        )
+        if is_laundry:
+            verification_desc = f"Final sweep: {room_name} - verify only this week's {category_name.lower()} remain, all else packed"
+
         verification_task = {
             'id': f"{room_name}_{category_name}_verification",
             'type': 'verification',
             'icon': self.templates['verification']['icon'],
             'room': room_name,
             'category': category_name,
-            'description': self.templates['verification']['template'].format(
-                room=room_name,
-                category=category_name.lower()
-            ),
-            'assignee': 'Brad',  # Brad does verification (no lifting)
+            'description': verification_desc,
+            'assignee': 'Brad',
             'completed': False,
             'day': None,
-            'order': 4
+            'order': 4,
+            'is_laundry': is_laundry
         }
         tasks.append(verification_task)
 
